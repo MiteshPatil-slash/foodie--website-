@@ -1,17 +1,17 @@
 // ===================== MENU DATA — uses your local images =====================
 const menuItems = [
-    { id: 1,  name: "Double Chicken Burger",  price: 200, category: "burgers",  badge: "hot",     img: "All images/burger.png" },
-    { id: 2,  name: "Chicken Roll",           price: 180, category: "burgers",  badge: "popular", img: "All images/chicken-roll.png" },
-    { id: 3,  name: "Spring Roll",            price: 150, category: "burgers",  badge: "",        img: "All images/spring-roll.png" },
-    { id: 4,  name: "Cheese Pizza",           price: 320, category: "pizza",    badge: "popular", img: "All images/pizza.png" },
-    { id: 5,  name: "Fried Chicken",          price: 260, category: "pizza",    badge: "hot",     img: "All images/fried-chicken.png" },
-    { id: 6,  name: "Lasagna",                price: 350, category: "pizza",    badge: "",        img: "All images/lasagna.png" },
-    { id: 7,  name: "Spaghetti",              price: 290, category: "drinks",   badge: "popular", img: "All images/spaghetti.png" },
-    { id: 8,  name: "Sandwich",               price: 160, category: "drinks",   badge: "",        img: "All images/sandwich.png" },
-    { id: 9,  name: "Chicken Burger Combo",   price: 420, category: "desserts", badge: "hot",     img: "All images/burger.png" },
-    { id: 10, name: "Crispy Fried Chicken",   price: 310, category: "desserts", badge: "",        img: "All images/fried-chicken.png" },
-    { id: 11, name: "Veg Spring Roll",        price: 130, category: "desserts", badge: "popular", img: "All images/spring-roll.png" },
-    { id: 12, name: "Classic Lasagna",        price: 380, category: "pizza",    badge: "",        img: "All images/lasagna.png" },
+    { id: 1,  name: "Double Chicken Burger",  price: 55, category: "burgers",  badge: "hot",     img: "All images/burger.png" },
+    { id: 2,  name: "Chicken Roll",           price: 25, category: "burgers",  badge: "popular", img: "All images/chicken-roll.png" },
+    { id: 3,  name: "Spring Roll",            price: 15, category: "burgers",  badge: "",        img: "All images/spring-roll.png" },
+    { id: 4,  name: "Cheese Pizza",           price: 32, category: "pizza",    badge: "popular", img: "All images/pizza.png" },
+    { id: 5,  name: "Fried Chicken",          price: 26, category: "pizza",    badge: "hot",     img: "All images/fried-chicken.png" },
+    { id: 6,  name: "Lasagna",                price: 35, category: "pizza",    badge: "",        img: "All images/lasagna.png" },
+    { id: 7,  name: "Spaghetti",              price: 29, category: "drinks",   badge: "popular", img: "All images/spaghetti.png" },
+    { id: 8,  name: "Sandwich",               price: 16, category: "drinks",   badge: "",        img: "All images/sandwich.png" },
+    { id: 9,  name: "Chicken Burger Combo",   price: 42, category: "desserts", badge: "hot",     img: "All images/burger.png" },
+    { id: 10, name: "Crispy Fried Chicken",   price: 31, category: "desserts", badge: "",        img: "All images/fried-chicken.png" },
+    { id: 11, name: "Veg Spring Roll",        price: 13, category: "desserts", badge: "popular", img: "All images/spring-roll.png" },
+    { id: 12, name: "Classic Lasagna",        price: 38, category: "pizza",    badge: "",        img: "All images/lasagna.png" },
 ];
 
 // ===================== CART STATE =====================
