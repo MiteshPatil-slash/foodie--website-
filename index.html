@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie — Delicious Food Delivered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-sidebar-header">
+            <h3>Your Cart <span id="cartCountBadge">0</span></h3>
+            <button class="close-cart" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items-list" id="cartItemsList">
+            <div class="empty-cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <a href="#" class="btn btn-full">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav class="navbar wrapper">
+            <a href="#" class="logo">Foodie<span>.</span></a>
+            <ul class="navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#app">App</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cartBtn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <a href="#" class="btn btn-nav">Sign In <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#app">App</a></li>
+            </ul>
+            <a href="#" class="btn">Sign In</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-shape"></div>
+            <div class="hero-bg-dots"></div>
+            <div class="wrapper hero-inner">
+                <div class="hero-content" data-animate>
+                    <div class="hero-tag"><span></span> Free delivery on first order</div>
+                    <h1>Enjoy Your<br><em>Delicious</em><br>Food</h1>
+                    <p class="hero-para">We will fill your tummy with delicious food with fast delivery right to your doorstep.</p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-lg">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><strong>10K+</strong><span>Happy Customers</span></div>
+                        <div class="stat-divider"></div>
+                        <div class="stat"><strong>200+</strong><span>Menu Items</span></div>
+                        <div class="stat-divider"></div>
+                        <div class="stat"><strong>30min</strong><span>Avg Delivery</span></div>
+                    </div>
+                </div>
+                <div class="hero-image" data-animate-delay>
+                    <div class="hero-img-ring"></div>
+                    <div class="hero-img-glow"></div>
+                    <img src="All images/delivery-boy.png" alt="Delivery Boy">
+                    <div class="floating-card card-1">
+                        <i class="fa-solid fa-star"></i>
+                        <div><strong>4.9</strong><span>Rating</span></div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <div><strong>25 min</strong><span>Delivery</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services-section" id="services">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h5>Our Services</h5>
+                    <h2>How Does It Work?</h2>
+                    <p>Three simple steps to get your favorite food delivered</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-step="01">
+                        <div class="service-img-wrap">
+                            <img src="All images/easy-to-order.png" alt="Easy to Order">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p>You only need a few steps in ordering food. Browse, select, and checkout in under a minute.</p>
+                    </div>
+                    <div class="service-card featured" data-step="02">
+                        <div class="service-img-wrap">
+                            <img src="All images/best-quality.png" alt="Best Quality">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p>Not only fast, our quality is also number one. Fresh ingredients, every single time.</p>
+                    </div>
+                    <div class="service-card" data-step="03">
+                        <div class="service-img-wrap">
+                            <img src="All images/fast-delivery.png" alt="Fast Delivery">
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>Delivery that is always on time. Track your order live and never wait too long.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="menu-section" id="menu">
+            <div class="wrapper">
+                <div class="section-header">
+                    <h5>Our Menu</h5>
+                    <h2>The Most Popular</h2>
+                    <p>Hand-picked favorites loved by thousands of customers</p>
+                </div>
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="burgers">Burgers</button>
+                    <button class="filter-btn" data-filter="pizza">Pizza</button>
+                    <button class="filter-btn" data-filter="drinks">Drinks</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                </div>
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu items injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS SECTION -->
+        <section class="reviews-section" id="reviews">
+            <div class="wrapper reviews-inner">
+                <div class="reviews-image">
+                    <div class="reviews-img-bg"></div>
+                    <img src="All images/delivery-boy-with-phone.png" alt="Delivery with phone">
+                    <div class="review-badge">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <div><strong>98%</strong><span>Satisfaction</span></div>
+                    </div>
+                </div>
+                <div class="reviews-content">
+                    <div class="section-header left-align">
+                        <h5>Our Reviews</h5>
+                        <h2>What They Say?</h2>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p>"Foodie is the best. Beside the many delicious meals, the service is also very good, especially very fast delivery. I highly recommend Foodie to you."</p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <img src="All images/profile1.jpeg" alt="Guy Hawkins">
+                                            <span>GH</span>
+                                        </div>
+                                        <div>
+                                            <strong>Guy Hawkins</strong>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p>"Fresh ingredients, creative menu and warm service make this spot a hidden gem. Perfect for casual dinners or special nights out. Truly a foodie's paradise!"</p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <img src="All images/profile2.jpeg" alt="Sarah Johnson">
+                                            <span>SJ</span>
+                                        </div>
+                                        <div>
+                                            <strong>Sarah Johnson</strong>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-quote"><i class="fa-solid fa-quote-left"></i></div>
+                                    <p>"The app is super easy to use and my order always arrives hot and on time. The burgers here are simply unbeatable. 10/10 would order again every day!"</p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">
+                                            <img src="All images/profile3.jpeg" alt="Raj Patel">
+                                            <span>RP</span>
+                                        </div>
+                                        <div>
+                                            <strong>Raj Patel</strong>
+                                            <div class="stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <button class="swiper-arrow" id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="swiper-pagination-custom" id="swiperDots"></div>
+                            <button class="swiper-arrow" id="next"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APP SECTION -->
+        <section class="app-section" id="app">
+            <div class="wrapper">
+                <div class="app-card">
+                    <div class="app-card-bg"></div>
+                    <div class="app-image">
+                        <img src="All images/mobile-app.png" alt="Mobile App">
+                    </div>
+                    <div class="app-info">
+                        <h5>Our Application</h5>
+                        <h2>Simple Way To Order Your Food</h2>
+                        <p>Discover food wherever and whenever and get your food delivered quickly. Available on iOS and Android.</p>
+                        <div class="app-badges">
+                            <a href="#" class="store-badge">
+                                <i class="fa-brands fa-apple"></i>
+                                <div><small>Download on the</small><strong>App Store</strong></div>
+                            </a>
+                            <a href="#" class="store-badge">
+                                <i class="fa-brands fa-google-play"></i>
+                                <div><small>Get it on</small><strong>Google Play</strong></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="wrapper footer-inner">
+            <div class="footer-brand">
+                <h2 class="logo">Foodie<span>.</span></h2>
+                <p>Delivering delicious food quickly and safely to your doorstep. Quality you can taste, speed you can trust.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon sm"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon sm"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#menu"><i class="fa-solid fa-chevron-right"></i> Menu</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#reviews"><i class="fa-solid fa-chevron-right"></i> Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+                    <li><i class="fa-solid fa-envelope"></i> foodie@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Get offers and updates delivered straight to your inbox.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button class="btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom wrapper">
+            <p>© 2026 Foodie. All Rights Reserved.</p>
+            <p>Made with <i class="fa-solid fa-heart"></i> in India</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
