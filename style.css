@@ -494,9 +494,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .hero-content h1 em {
-    font-style: italic;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--gold);
-}
+}   
 
 .hero-para {
     font-size: 1.1rem;
